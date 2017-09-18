@@ -1,4 +1,4 @@
-package com.zlikun.learning.commands;
+package com.zlikun.learning;
 
 import org.junit.After;
 import org.junit.Before;
@@ -13,17 +13,31 @@ public abstract class TestBase {
 	private int port = 6379;
 
 	@Before
-	public void init() {
-
+	public void _init() {
 		jedis = new Jedis(host, port);
-
+		init();
 	}
 
 	@After
-	public void destroy() {
+	public void _destroy() {
+		destroy() ;
 		if (jedis != null && !jedis.isConnected()) {
 			jedis.close();
 		}
 	}
 
+	/**
+	 * 准备操作
+	 */
+	protected void init() {
+		
+	}
+	
+	/**
+	 * 销毁操作
+	 */
+	protected void destroy() {
+		
+	}
+	
 }

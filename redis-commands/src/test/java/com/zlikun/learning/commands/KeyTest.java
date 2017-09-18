@@ -5,6 +5,8 @@ import java.util.stream.Stream;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.zlikun.learning.TestBase;
+
 import lombok.extern.slf4j.Slf4j;
 
 /**

@@ -1,5 +1,7 @@
 package com.zlikun.learning.commands;
 
+import com.zlikun.learning.TestBase;
+
 /**
  * 字符串类型命令
  * @author	zlikun

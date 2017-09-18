@@ -2,6 +2,8 @@ package com.zlikun.learning.commands;
 
 import org.junit.Test;
 
+import com.zlikun.learning.TestBase;
+
 import lombok.extern.slf4j.Slf4j;
 
 /**
