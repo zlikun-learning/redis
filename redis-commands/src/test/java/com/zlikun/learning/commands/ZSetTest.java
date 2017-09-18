@@ -58,7 +58,7 @@ public class ZSetTest extends TestBase {
 		Assert.assertEquals(Long.valueOf(5), jedis.zcard(key));
 		
 		// 计算指定分数区间元素个数($key ,$minScore ,$maxScore)
-		// 注意：分数区间包含边界值，如本例中的100.0
+		// 注意：分数区间包含右边界值，如本例中的100.0，但左边界值不包含
 		Assert.assertEquals(Long.valueOf(3), jedis.zcount(key, 80, 100));
 		
 		// 计算指定字典区间元素个数(个人不是太理解这块!)
