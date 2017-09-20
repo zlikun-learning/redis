@@ -9,8 +9,8 @@ public abstract class TestBase {
 
 	protected Jedis jedis;
 
-	private String host = "redis.zlikun.com";
-	private int port = 6379;
+	protected String host = "redis.zlikun.com";
+	protected int port = 6379;
 
 	@Before
 	public void _init() {
