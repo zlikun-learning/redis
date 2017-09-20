@@ -9,7 +9,7 @@ public abstract class TestBase {
 
 	protected Jedis jedis;
 
-	private String host = "192.168.9.205";
+	private String host = "redis.zlikun.com";
 	private int port = 6379;
 
 	@Before
