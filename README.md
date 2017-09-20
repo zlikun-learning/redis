@@ -2,6 +2,9 @@
 
 本案使用`jedis`操作`redis`
 
+#### 参考资料
+- [服务器信息](http://www.redis.net.cn/tutorial/3518.html)
+
 #### 数据结构
 
 - 常用数据结构：String、List、Hash、Set、ZSet
