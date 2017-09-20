@@ -33,3 +33,25 @@ Background saving started
 1) "dir"
 2) "/data"
 ```
+
+#### redis-benchmark
+> $ redis-benchmark [option] [option value]
+
+| 序号 | 选项 | 描述 | 默认值 |
+| --- | --- | --- | --- |
+| 1 | -h | 指定服务器主机名 | 127.0.0.1 |
+| 2 | -p | 指定服务器端口 | 6379 |
+| 3 | -s | 指定服务器 socket |	
+| 4 | -c | 指定并发连接数 | 50 |
+| 5 | -n | 指定请求数 | 10000 |
+| 6 | -d | 以字节的形式指定 SET/GET 值的数据大小 | 2 |
+| 7 | -k | 1=keep alive 0=reconnect | 1 |
+| 8 | -r | SET/GET/INCR 使用随机 key, SADD 使用随机值 |
+| 9 | -P | 通过管道传输 <numreq> 请求 | 1 |
+| 10 | -q | 强制退出 redis。仅显示 query/sec 值 |
+| 11 | --csv | 以 CSV 格式输出 |
+
+```
+# 测试并发200、总请求次数1,000,000、请求字节数256byte
+$ redis-benchmark -h 192.168.121.233 -p 6379 -c 200 -n 1000000 -d 256
+```
