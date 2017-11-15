@@ -10,7 +10,8 @@
 
 	<modules>
 		<module>redis-commands</module>
-	</modules>
+        <module>redis-consistent-hash</module>
+    </modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
